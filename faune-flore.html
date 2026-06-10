@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faune &amp; Flore — Le Grand Atlas du Royaume de Clover</title>
+  <meta name="description" content="Faune & flore du Royaume de Clover : poissons, plantes et champignons. Raretés, lieux de pêche et de récolte, et utilisations pour la forge." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-40 -40 80 88'><g fill='%23e3b341'><path d='M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z'/><path d='M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z' transform='rotate(72)'/><path d='M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z' transform='rotate(144)'/><path d='M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z' transform='rotate(216)'/><path d='M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z' transform='rotate(288)'/></g></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <svg width="0" height="0" class="svg-sprite" aria-hidden="true" focusable="false" style="position:absolute">
+    <symbol id="clover" viewBox="-40 -40 80 88">
+      <g fill="currentColor">
+        <path d="M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z"/>
+        <path d="M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z" transform="rotate(72)"/>
+        <path d="M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z" transform="rotate(144)"/>
+        <path d="M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z" transform="rotate(216)"/>
+        <path d="M0 0C-2-9-16-12-16-22-16-29-8-32 0-24 8-32 16-29 16-22 16-12 2-9 0 0Z" transform="rotate(288)"/>
+      </g>
+      <path d="M0 0C2 14 2 26 0 35" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <header class="header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <svg class="clover clover--gold"><use href="#clover"/></svg>
+        Atlas de Clover <small>Aube d'Or</small>
+      </a>
+      <nav class="nav-links" id="menu" aria-label="Navigation principale">
+        <a href="index.html">Accueil</a>
+        <a href="minerais.html">Minerais</a>
+        <a href="bestiaire.html">Bestiaire</a>
+        <a href="faune-flore.html" class="is-active">Faune &amp; Flore</a>
+      </nav>
+      <button class="burger" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
+
+  <section class="container section--tight" style="padding-top:clamp(2.5rem,6vw,4rem)">
+    <span class="kicker">Registre III · Ressources naturelles</span>
+    <h1 class="section-title" style="font-size:clamp(2rem,5vw,3.2rem)">Faune &amp; <span class="accent">Flore</span> de Clover</h1>
+    <p class="lead" style="margin-top:1rem">Ce registre répertorie les fleurs, champignons et poissons connus du Royaume. Chaque espèce est recensée avec sa rareté, son lieu de récolte et ses utilisations — médicinales, alimentaires ou artisanales — pour guider récolteurs, soigneurs et explorateurs.</p>
+  </section>
+
+  <!-- Aperçu des ressources -->
+  <section class="container section--tight">
+    <div class="panel panel--accent reveal">
+      <h3><span data-ico="compass"></span> Aperçu des ressources</h3>
+      <div class="grid grid-4" style="margin-top:1rem;gap:.7rem">
+        <div class="meta-line"><span class="rarity commune">Commune</span> Plante marécageuse</div>
+        <div class="meta-line"><span class="rarity rare">Rare</span> Poisson des marées</div>
+        <div class="meta-line"><span class="rarity mythique">Mythique</span> Poisson rare</div>
+        <div class="meta-line"><span class="rarity legendaire">Légendaire</span> Plante désertique</div>
+        <div class="meta-line"><span class="rarity legendaire">Légendaire</span> Poisson géant</div>
+        <div class="meta-line"><span class="rarity divin">Divin</span> Champignon violet</div>
+        <div class="meta-line"><span class="rarity divin">Divin</span> Champignon mort</div>
+        <div class="meta-line"><span class="rarity artifact">Artifact</span> Carpe Koi</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAUNE AQUATIQUE ===== -->
+  <section class="container section">
+    <div class="section-head">
+      <span class="kicker">Faune aquatique</span>
+      <h2 class="section-title">La <span class="accent">pêche</span> dans Clover</h2>
+    </div>
+
+    <div class="card reveal" style="margin-bottom:1.6rem">
+      <div class="card-media" style="aspect-ratio:21/7">
+        <img src="assets/img/faune-paysage.png" alt="Zone de pêche du Royaume de Clover" loading="lazy" />
+      </div>
+    </div>
+
+    <div class="grid grid-2" style="align-items:start">
+      <div class="panel reveal">
+        <h3><span data-ico="drop"></span> Conseils de pêche</h3>
+        <ul class="list-clean" style="margin-top:.5rem">
+          <li><span data-ico="sparkle"></span><span>Les poissons s'attrapent <b>à la chance</b> : aucun appât n'est meilleur qu'un autre.</span></li>
+          <li><span data-ico="fish"></span><span>On peut attraper jusqu'à <b>3 sortes différentes</b> de poissons.</span></li>
+          <li><span data-ico="bolt"></span><span>Attention à ne pas <b>trop user</b> de la canne à pêche.</span></li>
+          <li><span data-ico="map"></span><span>Voici leurs utilisations et les lieux où les pêcher.</span></li>
+        </ul>
+      </div>
+      <div class="panel panel--accent reveal">
+        <h3><span data-ico="fish"></span> Prises connues</h3>
+        <div class="fish-row" style="margin-top:1rem">
+          <div class="fish">
+            <img src="assets/img/poisson-marees.png" alt="Poisson des marées" loading="lazy" />
+            <div class="fn">Poisson des marées</div>
+            <span class="rarity rare">Rare</span>
+          </div>
+          <div class="fish">
+            <img src="assets/img/poisson-rare.png" alt="Poisson rare" loading="lazy" />
+            <div class="fn">Poisson rare</div>
+            <span class="rarity mythique">Mythique</span>
+          </div>
+          <div class="fish">
+            <img src="assets/img/poisson-geant.png" alt="Poisson géant" loading="lazy" />
+            <div class="fn">Poisson géant</div>
+            <span class="rarity legendaire">Légendaire</span>
+          </div>
+          <div class="fish">
+            <img src="assets/img/carpe-koi.png" alt="Carpe Koi" loading="lazy" />
+            <div class="fn">Carpe Koi</div>
+            <span class="rarity artifact">Artifact</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLORE ===== -->
+  <section class="container section">
+    <div class="section-head">
+      <span class="kicker">Flore de Clover</span>
+      <h2 class="section-title">Plantes &amp; <span class="accent">champignons</span></h2>
+      <p class="lead" style="margin-top:.8rem">Les composants végétaux entrent dans la fabrication des équipements du crépuscule.</p>
+    </div>
+
+    <div class="grid grid-auto">
+
+      <article class="card reveal">
+        <div class="card-media">
+          <span class="rarity commune" style="top:.7rem;left:.7rem">Commune</span>
+          <span class="rarity legendaire" style="position:absolute;top:.7rem;right:.7rem;z-index:2">Légendaire</span>
+          <img src="assets/img/flore-plante.png" alt="Plante marécageuse et désertique" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Plante marécageuse &amp; désertique</h3>
+          <div class="meta-line"><span data-ico="leaf"></span> Mêmes fleurs — variété au petit bonheur la chance</div>
+          <div class="craft"><span data-ico="anvil"></span><span><b>Désertique</b> → lame du chasseur maudit. <b>Marécageuse</b> → faux écarlate &amp; lance de l'ombre rouge.</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-media">
+          <span class="rarity" style="--c:var(--clover)">Plante</span>
+          <img src="assets/img/flore-plante-lac.png" alt="Plante du lac" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Plante du lac</h3>
+          <div class="meta-line"><span data-ico="drop"></span> Au bord des lacs du Royaume</div>
+          <div class="craft"><span data-ico="anvil"></span><span>Sert à fabriquer la <b>lance de l'ombre rouge</b>.</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-media">
+          <span class="rarity divin">Divin</span>
+          <img src="assets/img/flore-champignon-violet.png" alt="Champignon violet" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Champignon violet</h3>
+          <div class="meta-line"><span data-ico="sparkle"></span> Ressource divine</div>
+          <div class="craft"><span data-ico="anvil"></span><span>Sert à fabriquer l'<b>amulette du crépuscule</b>.</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal">
+        <div class="card-media">
+          <span class="rarity divin">Divin</span>
+          <img src="assets/img/flore-champignon-mort.png" alt="Champignon mort" loading="lazy" />
+        </div>
+        <div class="card-body">
+          <h3 class="card-title">Champignon mort</h3>
+          <div class="meta-line"><span data-ico="skull"></span> Ressource divine</div>
+          <div class="craft"><span data-ico="anvil"></span><span>Sert à fabriquer la <b>bague du crépuscule</b>.</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand"><svg class="clover clover--gold"><use href="#clover"/></svg> Le Grand Atlas de Clover</a>
+          <p>Registre officiel des connaissances du Royaume de Clover, tenu et enrichi au fil des expéditions de la compagnie.</p>
+        </div>
+        <div class="credits">
+          <span class="kicker">Réalisé grâce à</span>
+          <div class="credit"><span data-ico="crown"></span> Les membres de l'<b>Aube d'Or</b></div>
+          <div class="credit"><svg class="clover clover--gold"><use href="#clover"/></svg> Le soutien de la <b>Famille Clairval</b></div>
+        </div>
+      </div>
+      <div class="footer-copy">© <span data-year>2026</span> Le Grand Atlas du Royaume de Clover · Projet Atlas — Fan-projet non officiel, univers inspiré de Black Clover.</div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
